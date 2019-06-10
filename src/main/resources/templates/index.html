@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/test.css}">
+    <script th:src="@{/js/jquery-3.4.1.min.js}"></script>
+</head>
+<body>
+<p>Stash this</p>
+<p>이것은 KOREAN 입니다. this is 한국어</p>
+<img th:src="@{/images/test.png}">
+<form id="signForm">
+    ID: <input type="text" name="id"/>
+    PW: <input type="text" name="pw"/>
+    <button type="button" onclick="signin()">Sign in</button>
+    <button type="button" onclick="signup()">Sign up</button>
+
+</form>
+</body>
+<script th:src="@{/js/jquery-3.4.1.min.js}" type="application/javascript">
+test();
+
+function signin(){
+    alert("signin");
+}
+function signup() {
+    alert("signup");
+}
+</script>
+</html>

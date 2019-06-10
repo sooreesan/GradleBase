@@ -1,0 +1,30 @@
+server:
+    port: 28081
+    tomcat:
+        uri-encoding: UTF-8
+
+spring:
+    datasource:
+        url: jdbc:log4jdbc:mysql://127.0.0.1/test?serverTimezone=UTC
+        driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+        username:
+        password:
+
+mybatis:
+    mapper-locations: classpath*:sqlmapper/*.xml
+    type-aliases-package: com.sbsft.tms.domain
+    configuration:
+        map-underscore-to-camel-case: true
+        default-fetch-size: 20
+        default-statement-timeout: 30
+
+
+
+
+
+
+
+
+
+
+
